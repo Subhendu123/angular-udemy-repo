@@ -2,13 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ChildComponent } from '../children/boy.component';
-//asass//a
+import { BoyComponent } from './boy/boy.component';
+import { GirlComponent } from './girl/girl.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent
+    BoyComponent,
+    GirlComponent
   ],
   imports: [
     BrowserModule
