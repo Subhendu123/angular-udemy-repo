@@ -2,7 +2,7 @@
   <app-header></app-header>
 </div>
 <div class="container">
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-md-6">
       <h1><app-recipes></app-recipes></h1>
     </div>
@@ -12,5 +12,14 @@
     <div class="col-md-2">
       <h3><app-shopping-list></app-shopping-list></h3>
     </div>
+  </div> -->
+  <div class="row">
+    <app-recipe-detail (saveRecipe)="createAndAddRecipe($event)"></app-recipe-detail>
+  </div>
+<hr>
+  <div class="row">
+    <!-- <div class="col-md-4"> -->
+      <app-recipe-list class="col-md-6" [recipeList]="recipes"></app-recipe-list>
+    <!-- </div> -->
   </div>
 </div>

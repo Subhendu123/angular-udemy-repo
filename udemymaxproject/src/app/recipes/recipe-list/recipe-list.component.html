@@ -1,1 +1,12 @@
-<p>recipe-list works!</p>
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-group" *ngFor="let recipe of recipeList">
+      <li class="list-group-item active">{{recipe.name}}</li>
+      <li class="list-group-item active">{{recipe.description}}</li>
+      <li class="list-group-item active">
+        <img src="{{recipe.location}}" alt="{{recipe.name}}" class="img-responsive">
+      </li>
+      <!-- <li class="list-group-item disabled" aria-disabled="true">Disabled item</li> -->
+    </ul>
+  </div>
+</div>
